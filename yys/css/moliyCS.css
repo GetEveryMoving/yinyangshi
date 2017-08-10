@@ -1,0 +1,523 @@
+body{
+    background-color: #eaeaea;
+}
+
+.top{
+    width:100%;
+    height: 160px;
+    background: url("../images/top-bg.jpg");
+
+}
+
+.top .top-logo {
+    margin-top:10px;
+    float: left;
+}
+.top .top-tuku {
+    width: 46px;
+    height: 28px;
+    margin-top: 10px;
+    background: url("../images/top-tuku.png");
+    float: left;
+}
+.top .top-nav{
+    float: left;
+}
+.top .top-nav i {
+    display: block;
+    width: 34px;
+    height: 34px;
+    /*background: url("../images/top-nav.png");*/
+}
+.top .top-nav li{
+    margin-left:26px;
+    padding-top: 10px;
+    text-align: center;
+    font-size:20px;
+    line-height:22px;
+    width: 34px;
+    float: left;
+}
+.top-nav i.first {
+    background: url("../images/top-nav.png");
+}
+.top-nav i.top-selected{
+    background: url("../images/top-nav.png");
+}
+.top .top-login {
+    width: 200px;
+    float:right;
+}
+.top .top-login a{
+    color:#fff;
+}
+.top .top-login i {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+}
+
+.top .top-login .top-log{
+    
+    background: url("../images/top-login.png") no-repeat;
+}
+
+.top .top-login .top-go{
+    background: url("../images/top-go.png") no-repeat;
+}
+
+.top .top-login .log,.top .top-login .top-search{
+    float: right;
+}
+.top .top-login .log{
+    margin-top: 52px;
+    font-size:14px;
+}
+.top .log .login{
+
+    display: inline-block;
+}
+.top .login i{
+    margin:0 5px;
+}
+.top .go i{
+    margin:0 0 0 5px;
+}
+.top .log span{
+    padding:0 10px;
+}
+.top .top-search .search-txt {
+    margin-top:16px;
+    width: 168px;
+    height: 14px;
+    border:1px solid #97919f;
+    border-radius: 4px;
+    padding:6px 0 6px 10px;
+    background:transparent url("../images/top-search.png") no-repeat right center;
+}
+
+.banner{
+    width: 1000px;
+    /*width:100%;*/
+    height: 400px;
+    margin:0 auto;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.banner #banner-img {
+    width: 8000px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner #banner-img li {
+    float: left;
+    width: 1000px;
+    height:400px;
+    overflow: hidden;
+}
+.banner #banner-img img {
+    width: 100%;
+}
+
+.banner #arr {
+    width: 100%;
+    position: absolute;
+    top:50%;
+}
+.banner #arr #arr-left,.banner #arr #arr-right {
+    position: absolute;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.banner #arr #arr-left{
+    left:-100px;
+}
+.banner #arr #arr-right{
+    right:-100px;
+}
+.banner .banner-list{
+    height: 360px;
+    width: 200px;
+    padding:20px;
+    background-color: #fff;
+    position: absolute;
+    right:0;
+}
+.banner .banner-list h3 {
+    height:40px;
+    line-height:40px;
+    font-size:20px;
+    color:#000;
+    font-weight:900;
+}
+
+.banner .banner-list .tab-paint,.banner .banner-list .tab-cos{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height:30px;
+    background-color: #eee;
+    text-align: center;
+}
+.banner .banner-list .tab－selected {
+    background-color: #836da0;
+    color:#fff;
+}
+.tab－selected i {
+    display: block;
+    height: 0;
+    width: 0;
+    font-size: 0;
+    line-height: 0;
+    border: 4px solid #fff;
+    border-top-color: #836da0;
+    margin: 0 auto;
+}
+
+.banner .banner-list .content {
+    width: 160px;
+    height: 280px;
+}
+.banner .banner-list .main{
+    margin-top: 26px;
+    display: none;
+}
+.banner .banner-list .show{
+    display: block;
+}
+.banner-list .content i{
+    display: inline-block;
+    background: 0 0;
+    font-size: 18px;
+    color: #222;
+    border-radius: 2px;
+    margin-right: 8px;
+    width: 20px;
+    height:20px;
+    line-height:20px;
+    font-family: "Microsoft Yahei";
+    font-weight: 700;
+}
+.banner .banner-list .middle {
+    background-color: #836da0;
+    color: #fff;
+}
+.banner .banner-list .bt{
+    background-color: #c3c3c3;
+    color: #fff;
+}
+
+.banner .banner-list a {
+    font-family: "Microsoft Yahei";
+    font-size:14px;
+
+}
+.banner .banner-list li {
+    height:38px;
+    line-height:38px;
+}
+.banner .banner-list .pic {
+    height:80px;
+    overflow: hidden;
+}
+
+.maskl {
+    position: absolute;
+    left:-300px;
+    height: 400px;
+    width: 300px;
+    background-color: #000;
+    opacity:0.7;
+}
+.maskr {
+    position: absolute;
+    right:-300px;
+    height: 400px;
+    width: 300px;
+    background-color: #000;
+    opacity:0.7;
+}
+
+
+.pageNav {
+    width: 42px;
+    position: fixed;
+    right:96px;
+    top:300px;
+    display: none;
+}
+.pageNav a{
+    height: 47px;
+    line-height: 47px;
+}
+
+
+.paint{
+    padding-top:37px;
+}
+.paint .paint-top {
+    padding:10px 0;
+    border-bottom:2px solid #ddd;
+}
+.paint .paint-top em {
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    font-size: 36px;
+    font-weight: 700;
+    color: #312540;
+    padding-left: 10px;
+    font-family: "宋体";
+}
+
+.paint .paint-top i {
+    float: left;
+    display: inline-block;
+
+}
+.paint .paint-top .paint-topR{
+    margin-top: 20px;
+}
+.paint .paint-top .paint-more{
+    display: inline-block;
+    height: 13px;
+    line-height: 13px;
+
+}
+
+.paint .paint-top span{
+    padding:0 10px;
+}
+.paint .paint-top .paint-btn {
+    display: inline-block;
+    background-color: #836da0;
+    color: #fff;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+}
+.paint .paint-content {
+    margin-top: 20px;
+    color: #000;
+
+}
+
+.paint .paint-content .big {
+    width: 354px;
+    height: 376px;
+    padding: 13px;
+    background: #fff;
+    font-size:16px;
+}
+
+.paint-content .big a {
+    display: block;
+    width: 356px;
+    height: 280px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.paint .big em {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    margin-left: -13px;
+    margin-bottom: 15px;
+    background: #312540;
+    color: #fff;
+}
+
+.paint .big span {
+
+    height:30px;
+    line-height:30px;
+}
+
+.paint .paint-small {
+    width: 620px;
+    height: 375px;
+}
+
+.paint .paint-small a {
+    display: block;
+    width: 160px;
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.paint .paint-small .small{
+    width: 160px;
+    height: 170px;
+    padding: 8px;
+    background: #fff;
+    margin-left:30px;
+    margin-bottom: 30px;
+    /*float: left;*/
+}
+
+.paint .paint-small span {
+    font-size:14px;
+    height: 40px;
+    line-height:40px;
+}
+
+.cos .cos-content{
+    margin-top: 20px;
+    color: #000;
+}
+
+.cos .cos-content .big {
+    width: 280px;
+    height: 376px;
+    padding: 13px;
+    background: #fff;
+    font-size:14px;
+}
+
+.cos-content .big a {
+    display: block;
+    width: 280px;
+    height: 310px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.cos .big em {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    margin-left: -13px;
+    margin-bottom: 5px;
+    background: #312540;
+    color: #fff;
+}
+.cos-content .cos-small{
+    width: 690px;
+    height: 375px;
+}
+
+.cos-content .cos-small .small {
+    width: 140px;
+    height: 170px;
+    padding: 8px;
+    background: #fff;
+    margin-left:15px;
+    margin-bottom: 30px;
+}
+
+.cos-content .small a {
+    display: block;
+    width: 140px;
+    height: 144px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.cos-content .small span {
+    font-size:14px;
+}
+
+.face-bag .fb-pic {
+    padding: 8px;
+    width: 160px;
+    height: 170px;
+    margin-top: 20px;
+    margin-right: 29px;
+    background: #fff;
+}
+.face-bag .last {
+    margin-right:0;
+}
+
+.face-bag .fb-pic a {
+    display: block;
+    width: 160px;
+    height: 134px;
+    overflow: hidden;
+}
+
+.face-bag .fb-pic span{
+    display: block;
+    margin-top: 10px;
+    font-size:14px;
+    color: #000;
+    height: 30px;
+    line-height:30px;
+}
+
+.show-picture .big{
+    width: 280px;
+    height: 376px;
+    padding: 13px;
+    background: #fff;
+    font-size: 14px;
+}
+.show-picture .big em {
+    margin-bottom: 8px;
+}
+.show-picture .big span {
+    color: #000;;
+    height: 18px;
+    line-height: 18px;
+}
+
+.rule {
+    margin-top: 60px;
+    color: #000;
+    font-size:14px;
+}
+.rule h3 {
+    color:#000;
+    font: 700 18px/30px "Microsoft YaHei";
+}
+.rule ol{
+    margin-bottom: 100px;
+}
+.rule ol li {
+    height: 25px;
+    line-height:25px;
+}
+
+.footer{
+    width:100%;
+    height: 40px;
+    padding:20px 0;
+    color:#fff;
+    background: url("../images/top-bg.jpg");
+}
+.footer .footer-center{
+    margin:0 auto;
+}
+.footer .wangyi {
+    margin-left: 142px;
+    display: inline-block;
+    width: 118px;
+    height: 31px;
+    background: url("../images/netease.2.png");
+}
+.footer .games{
+    display: inline-block;
+    width: 134px;
+    height: 31px;
+    background: url("../images/nie.2.png");
+}
+.footer .footer-center p{
+    /*display: inline-block;*/
+    /*float: right;*/
+}
+.footer .footer-center span {
+    text-align: left;
+    display: inline-block;
+    padding-left: 6px;
+}
+
+

@@ -1,0 +1,608 @@
+/*开始动画*/
+#kaishi{
+    width: 1980px;
+    height: 1120px;
+    background: url("../imgs/begin-1.jpg");
+    left: -200px;;
+    position: absolute;
+    opacity: 1;
+}
+.kaishi2{
+    width: 1920px;
+    height: 925px;
+    background: url("../imgs/begin-two.jpg");
+    display: none;
+    left: -300px;
+    position: absolute;
+}
+/*主页大盒子*/
+.loaded{
+    width: 1580px;
+    height: 4781px;
+    overflow: hidden;
+    opacity: 0;
+}
+/*网易导航*/
+.wy_nav{
+    width: 1580px;
+    height: 55px;
+    /*background-color: red;*/
+    background-color: #FBFBFB;
+    display: none;
+    position:relative;
+    z-index: 999;
+    /*left: 25%;*/
+    /*float: left;*/
+    /*margin: 0 auto;*/
+    /*margin-left: 50%;*/
+    min-width: 1000px;
+}
+.wy_nav-a{
+    height: 45px;
+    width: 135px;
+    background: url("../imgs/wy_nav.png");
+    margin-top: 5px;
+    margin-left: 290px;
+    float: left;
+}
+.wy_nav-a a{
+    height: 45px;
+    width: 135px;
+    display: inline-block;
+    text-indent: -2000px;
+}
+
+.wy_nav ul{
+    margin-left:925px;
+}
+.wy_nav ul li{
+    float: left;
+    font-size: 12px;
+    line-height: 54px;
+    margin-left: 28px;
+}
+
+.wy_nav .wy_nav_ul{
+    /*background: url("../imgs/wy_nav_ul.png");*/
+    margin-left: 4px;
+    margin-right: 0px;
+}
+
+/*阴阳师导航*/
+.yys_nav{
+    width: 100%;
+    height: 65px;
+    background: url("../imgs/yys_nav-bg.png");
+    padding-right: 185px;
+    position:relative;
+}
+.yys_nav  ul {
+    padding-top: 25px;
+    float: left;
+    width: 990px;
+    margin-left: 180px;
+    
+}
+.yys_nav ul li {
+    float: left;
+    /*width: 164px;*/
+    /*width: 164px;*/
+    width: 82px;
+    height: 33px;
+    border-right: 1px dotted #8282bd;
+    /*text-align: center;*/
+    padding-left: 41px;
+    padding-right: 41px;
+}
+.yys_nav .sy em{
+    width: 23px;
+    height: 23px;
+    background: url("../imgs/index_z_.png") -821px -52px;
+    display: block;
+    float: left;
+}
+.yys_nav .new em{
+    width: 23px;
+    height: 23px;
+    background: url("../imgs/index_z_.png") -821px -52px;
+    display: none;
+    float: left;
+}
+.yys_nav .yx em{
+    width: 23px;
+    height: 23px;
+    background: url("../imgs/index_z_.png") -821px -52px;
+    display: none;
+    float: left;
+}
+.yys_nav .yy em{
+    width: 23px;
+    height: 23px;
+    background: url("../imgs/index_z_.png") -821px -52px;
+    display: none;
+    float: left;
+}
+.yys_nav .tr em{
+    width: 23px;
+    height: 23px;
+    background: url("../imgs/index_z_.png") -821px -52px;
+    display: none;
+    float: left;
+}
+.yys_nav .yxlt em{
+    width: 23px;
+    height: 23px;
+    background: url("../imgs/index_z_.png") -821px -52px;
+    display: none;
+    float: left;
+}
+.yys_nav span{
+    float: left;
+}
+.yys_nav .sy span{
+    width: 37px;
+    height: 21px;
+    background: url("../imgs/sy.png");
+    display: block;
+}
+.yys_nav .new span{
+    width: 80px;
+    height: 21px;
+    background: url("../imgs/new.png");
+    display: block;
+}
+.yys_nav .yx span{
+    width: 80px;
+    height: 21px;
+    background: url("../imgs/yx.png");
+    display: block;
+}
+.yys_nav .yy span{
+    width: 79px;
+    height: 21px;
+    background: url("../imgs/yy.png");
+    display: block;
+}
+.yys_nav .tr span{
+    width: 76px;
+    height: 21px;
+    background: url("../imgs/tr.png");
+    display: block;
+}
+.yys_nav .yxlt span{
+    width: 80px;
+    height: 21px;
+    background: url("../imgs/yxlt.png");
+    display: block;
+}
+.yys_nav ul .none{
+    border: none;
+    padding-right: 0px;
+}
+.gz{
+    width: 231px;
+    height: 34px;
+    background: url("../imgs/yys-nav-right.png");
+    float: right;
+    margin-top: 18px;
+    margin-right: 140px;
+    /*margin-right: 45px;*/
+}
+.gz span{
+    line-height: 25px;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    margin: 8px;
+}
+.gz i{
+    width: 24px;
+    height: 24px;
+    background: url("../imgs/index_z_.png") -784px -150px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 6px;
+}
+.gz b{
+    width: 24px;
+    height: 24px;
+    background: url("../imgs/index_z_.png") -881px -52px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 6px;
+}
+.gz u{
+    width: 24px;
+    height: 24px;
+    background: url("../imgs/index_z_.png") -760px -150px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 6px;
+}
+.gz strong{
+    width: 24px;
+    height: 24px;
+    background: url("../imgs/index_z_.png") -863px -124px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 6px;
+}
+/*游戏下载*/
+.gamedown{
+    position: relative;
+}
+.gamedown-bg{
+    position: relative;
+    width: 1580px;
+    height: 912px;
+    overflow: hidden;
+    /*display: none;*/
+}
+.gamedown .left{
+    width: 960px;
+    height: 912px;
+    background: url("../imgs/left.jpg");
+    /*left: 0px;*/
+    position: absolute;
+    right: 50%;
+    /*display: none;*/
+}
+.gamedown .right{
+    width: 960px;
+    height: 912px;
+    background: url("../imgs/right.jpg") ;
+    /*right: 0px;*/
+    left: 50%;
+    position: absolute;
+    /*display: none;*/
+}
+.yys-logo{
+    width: 79px;
+    height: 260px;
+    background: url("../imgs/yys-logo.png");
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 5;
+}
+/*人物图片*/
+.gamedown .body{
+    width: 1424px;
+    height: 927px;
+    background: url("../imgs/downbg.png") no-repeat;
+    position: absolute;
+    /*float: left;*/
+    top: -10px;
+    /*z-index: 1;*/
+}
+.gamedown .flowers-1{
+    width: 1908px;
+    height: 718px;
+    background: url("../imgs/body-bg2.png") no-repeat;
+    position: absolute;
+    top: -10px;
+}
+.gamedown .flowers-2{
+    width: 1900px;
+    height: 863px;
+    position: absolute;
+    top: 0px;
+    background: url("../imgs/body-BG.png");
+}
+.gamedown .cloud-left{
+    width: 397px;
+    height: 116px;
+    background: url("../imgs/cloud1-left.png");
+    position: absolute;
+    top: 500px;
+}
+.gamedown .cloud-right{
+    width: 397px;
+    height: 116px;
+    background: url("../imgs/cloud-right.png");
+    position: absolute;
+    right: -50px;
+    top: 200px;
+}
+.gamedown .font{
+    width: 796px;
+    height: 132px;
+    background: url("../imgs/body-one.png");
+    position: absolute;
+    top: 506px;
+    left: 50%;
+    margin-left: -393px;
+}
+.gamedown .down-box{
+    width: 301px;
+    height: 135px;
+    background: url("../imgs/body-one-erweimabg.png");
+    position: absolute;
+    /*z-index: 4;*/
+    top: 670px;
+    left: 50%;
+    margin-left: -150px;
+}
+/*下载盒子*/
+.down-box .down-erweima img{
+    width: 109px;
+    height: 109px;
+    /*background: url("../imgs/down-erweima.jpg");*/
+    position: absolute;
+    top: 12px;
+    left: 7px;
+}
+.down-box .down-anzuo{
+    width: 171px;
+    height: 51px;
+    background: url("../imgs/index_z_.png") no-repeat -484px  -676px;
+    position: absolute;
+    bottom: 14px;
+    right: 7px;
+}
+.down-box .down-ios{
+    width: 171px;
+    height: 51px;
+    background: url("../imgs/index_z_.png") no-repeat -142px -677px;
+    position: absolute;
+    top: 13px;
+    right: 8px;
+}
+/*经典题材*/
+.classics{
+    width: 100%;
+    height: 891px;
+    background: url("../imgs/jd-bg.jpg");
+    position: relative;
+}
+.classics-font{
+    width: 531px;
+    height: 98px;
+    background: url("../imgs/classics-font.png") no-repeat;
+    left: 50%;
+    margin-left: -265px;
+    position: absolute;
+    top: 55px;
+}
+.classics-left{
+    width: 116px;
+    height: 253px;
+    background: url("../imgs/classics-left.png");
+    position: absolute;
+    top: 50%;
+    margin-top: -121px;
+}
+.classics .bq{
+    width: 490px;
+    height: 727px;
+    background: url("../imgs/bq.png");
+    position: absolute;
+    top: 128px;
+    right: 210px;
+}
+.classics .video{
+    width: 700px;
+    height: 396px;
+    background: url("../imgs/shijieguan_video.jpg");
+    position: absolute;
+    top: 206px;
+    left: 235px;
+}
+.classics .stroy{
+    width: 710px;
+    height: 149px;
+    background: url("../imgs/story.png");
+    position: absolute;
+    top: 621px;
+    left: 231px;
+}
+.classics .stroy p{
+    color: #34241c;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 30px;
+}
+/*唯美和风*/
+.wm{
+    width: 1920px;
+    height: 891px;
+    background: url("../imgs/wm-bg.jpg");
+    position: relative;
+}
+.wm-font{
+    width: 542px;
+    height: 99px;
+    background: url("../imgs/wm-font.png");
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -414px;
+}
+.wm-left{
+    width: 116px;
+    height: 253px;
+    background: url("../imgs/wm-left.png");
+    position: absolute;
+    top: 50%;
+    margin-top: -121px;
+}
+.liao{
+    width: 517px;
+    height: 681px;
+    background: url("../imgs/liao%20(1).png");
+    position: absolute;
+    top: 160px;
+    right: 530px;
+}
+.wm .wm-m-box{
+    width: 659px ;
+    height: 471px;
+    background: url("../imgs/wm-m-box.png");
+    position: absolute;
+    top: 210px;
+    left: 230px;
+}
+.wm-box-video{
+    width: 600px ;
+    height: 387px;
+    background: url("../imgs/wm-box-video.jpg");
+    position: absolute;
+    top: 59px;
+    left: 33px;
+    border: 2px solid #fff;
+}
+/*豪华声优*/
+.hh{
+    width: 1920px;
+    height: 891px;
+    background: url("../imgs/shengyou_bg.jpg");
+    position: relative;
+}
+.hh-font{
+    width: 597px;
+    height: 98px;
+    background: url("../imgs/hh-font.png");
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -390px;
+}
+.hh-font-buttom {
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 207px;
+    /*left: 50%;*/
+    left: 630px;
+    height: 56px;
+}
+.hh-font-buttom .hh-font-buttom-zj{
+    width: 152px;
+    height: 56px;
+    background: url("../imgs/hh-font-buttom.png");
+    float: left;
+    color: #a8813c;
+    font-size: 22px;
+    line-height: 56px;
+    text-align: center;
+}
+.hh-font-buttom .hh-font-buttom-ss{
+    width: 152px;
+    height: 53px;
+    background: url("../imgs/hh-font-buttom-right.png");
+    float: left;
+    margin-left: 15px;
+    color: #FEEEB9;
+    font-size: 22px;
+    line-height: 56px;
+    text-align: center;
+
+}
+.hh-left{
+    width: 116px;
+    height: 253px;
+    background: url("../imgs/hh-left.png");
+    position: absolute;
+    top: 50%;
+    margin-top: -121px;
+}
+.hh ul{
+    position: absolute;
+    left: 188px;
+    top: 318px;
+}
+.hh li{
+    width: 283px;
+    height: 430px;
+    background: url("../imgs/ss-bg.png");
+    float: left;
+    margin-right: 36px;
+}
+.hh li i{
+    width: 254px;
+    height: 328px;
+    margin-left: 15px;
+    margin-top: 14px;
+    background: url("../imgs/li-qm.png") no-repeat;
+    display: block;
+}
+.hh li p{
+    position: relative;
+    color: #34241c;
+    font-size: 18px;
+    width: 160px;
+    line-height: 26px;
+    margin-top: 5px;
+    margin-left: 9px;
+}
+.hh li span{
+    width: 254px;
+    line-height: 20px;
+    color: #aba7a5;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 9px;
+    display: block;
+}
+.hh li b{
+    width: 254px;
+    height: 328px;
+    margin-left: 15px;
+    margin-top: 14px;
+    background: url("../imgs/li-sy.png") no-repeat;
+    display: block;
+}
+.hh li em{
+    width: 254px;
+    height: 328px;
+    margin-left: 15px;
+    margin-top: 14px;
+    background: url("../imgs/li-by.png") no-repeat;
+    display: block;
+}
+.hh li strong{
+    width: 254px;
+    height: 328px;
+    margin-left: 15px;
+    margin-top: 14px;
+    background: url("../imgs/li-bq.png") no-repeat;
+    display: block;
+}
+/*探索收集*/
+.ts{
+    width: 1920px;
+    height: 996px;
+    background: url("../imgs/ts-bg.jpg");
+    position: relative;
+}
+.ts-font{
+    width: 640px;
+    height: 99px;
+    background: url("../imgs/ts-font.png");
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -415px;
+    /*margin: 0 auto;*/
+}
+.ts .ts-box{
+    width: 659px ;
+    height: 471px;
+    background: url("../imgs/wm-m-box.png");
+    position: absolute;
+    top: 200px;
+    left: 460px;
+}
+.ts-box-m{
+    width: 535px;
+    height: 367px;
+    border: 1px solid #aa9987;
+    box-shadow: -1px 0 8px 0 #aa9987;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -267px;
+    margin-top: -183px;
+}

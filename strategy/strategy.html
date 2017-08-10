@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>游戏战略</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../icon.ico"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/strategy.css"/>
+    <script src="js/strategy.js"></script>
+    <script src="js/jquery-1.12.2.js"></script>
+    <script>
+        $(function(){
+            $(".strategy-nav>ul>li").mouseenter(function(){
+               $(this).addClass("first-tit").siblings().removeClass("first-tit");
+
+            })
+            $($(".strategy-nav>ul>li").mouseleave(function(){
+                $(".strategy-nav>ul>li").eq(0).addClass("first-tit").siblings().removeClass("first-tit");
+
+            }))
+        })
+
+        $(function() {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 20) {
+                    $(".main-top1-fixed").fadeIn(100);
+                } else {
+                    $(".main-top1-fixed").fadeOut(100);
+                }
+            })
+
+
+            //新闻内容背景图
+            $(".item").mouseenter(function () {
+                $(this).animate({
+                    'background-position': "-100px"
+                }, 2000, function () {
+                    $(this).animate({
+                        'background-position': 0
+                    })
+                })
+            })
+//关闭按钮$
+            $(".btn-close").click(function() {
+                $(".sider,.btn-close").css({
+                    //right:-330
+                    "display":"none"
+
+                })
+                $(".item").css({
+                    width: 1000
+                })
+
+            })
+
+
+            //二维码扫描
+            var b=true;
+            setInterval(function(){
+                //console.log(123);
+                if(b){
+                    b=false;
+                    $(".NIE-qrcode i").animate({
+                        top: 158,
+                    },3000,function(){
+                        $(".NIE-qrcode i").animate({
+                            top:0
+                        },2000,function(){
+                            b=true
+                        })
+                    });
+                }
+            },200)
+
+        })
+    </script>
+</head>
+<body>
+<!--头部-->
+<div class="top">
+    <div class="top-main">
+        <h1 class="top-logo"><a href="#">网易游戏</a></h1>
+        <div class="shortcut">
+            <ul>
+                <li><a href="#">注册帐号</a></li>
+                <li><a href="#">安卓充值</a></li>
+                <li class="catalogue"><a href="#">网易游戏全目录<b class="ico-bg"><i></i></b></a></li>
+                <li><a href="#">安卓充值9.5折</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--标题定位的效果-->
+<div class="main-top1-fixed">
+    <div class="top1-left">
+        <p class="top1-p">扫码下载</p>
+        <img src="./images/qr.png" alt="" />
+        <a href="#" class="top1-title">
+            <span class="logo"></span>
+            <div class="game-name">
+                <h3>阴阳师</h3>
+                <p>网易和风匠心巨制</p>
+            </div>
+        </a>
+    </div>
+    <ul>
+        <li>
+            <a href="../阴阳师/html/index.html">
+                官网首页
+            </a>
+            <span class="link"></span>
+        </li>
+        <li>
+            <a href="../阴阳师（师兄）/news.html">
+                新闻资讯
+            </a>
+            <span class="link"></span>
+        </li>
+        <li>
+            <a href="#">
+                游戏策略
+            </a>
+            <span class="link"></span>
+        </li>
+        <li>
+            <a href="../阴阳师游戏特色/阴阳师游戏特点.html">
+                游戏特色
+            </a>
+            <span class="link"></span>
+        </li>
+        <li>
+            <a href="../yys/moliy.html">
+                同人专区
+            </a>
+            <span class="link"></span>
+        </li>
+        <li>
+            <a href="#">
+                官网渠道
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--广告-->
+<div class="top-bar">
+    <ul class="topnav_list">
+        <li><a href="../阴阳师/html/index.html">官网首页</a><span class="line"></span></li>
+        <li><a href="../阴阳师（师兄）/news.html">新闻资讯</a><span class="line"></span></li>
+        <li><a href="#">游戏战略</a><span class="line"></span></li>
+        <li><a href="../阴阳师游戏特色/阴阳师游戏特点.html">游戏特色</a><span class="line"></span></li>
+        <li><a href="../yys/moliy.html">同人专区</a><span class="line"></span></li>
+        <li><a href="#">官方渠道</a></li>
+    </ul>
+</div>
+<div class="banner">
+    <a href="#" class="logo"><img src="images/logo_7920691.png" alt=""/></a>
+    <div class="banner-img">
+        <img src="images/banner_04ea374.jpg" alt=""/>
+    </div>
+</div>
+<!--游戏战略-->
+<div class="strategy">
+    <h2 class="strategy-tit">游戏攻略</h2>
+    <div class="strategy-nav">
+        <ul>
+            <li class="first-tit"><a href="#">最新</a><i></i></li>
+            <li><a href="#">新手</a><i></i></li>
+            <li><a href="#">式神</a><i></i></li>
+            <li><a href="#">御魂</a><i></i></li>
+            <li><a href="#">斗技</a><i></i></li>
+            <li><a href="#">玩法</a><i></i></li>
+            <li><a href="#">帮助</a><i></i></li>
+        </ul>
+       <div class="search">
+           <input type="text" class="search_con" placeholder="请输入问题"/><div class="search_btn"></div>
+       </div>
+    </div>
+</div>
+<!--新闻列表-->
+<div class="content-box clearfix">
+    <div class="news-list">
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-inner">
+                <a href="#">
+                    <p class="p-tit">2016-12-22 大型斗技常见阵容讲解与组建</p>
+                    <p class="p-mess">阴阳师这款游戏之所以这么让我喜爱，其中最大的因素还是他的pvp也就是斗技部分，在四十级之后玩家的式神阵容大致定型，pve部分的内容基本被探索完毕，而斗技就是最刺激也是最令人着迷的地方了。</p>
+                    <span class="category">斗技</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="pager">
+            <div class="pager-inner">
+                    <span class="pager-list">
+                        <a class="pager-list-first"href="#">1/24<i></i></a>
+                        <em>第1页</em>
+                        <a href="#">第2页</a>
+                        <a href="#">第3页</a>
+                        <a href="#">第4页</a>
+                        <a href="#">第5页</a>
+                    </span>
+                <a class="next no-text" href="#">下一页</a>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="sider">
+        <a class="btn-close" href="#">
+            <i></i>
+        </a>
+        <div class="sider-main">
+            <div class="nie-download">
+                <h3 class="sider-tit1">下载游戏</h3>
+                <div class="NIE-qrcode">
+                    <i></i>
+                    <img src="images/wb_2cdebbf.png" alt=""/>
+                </div>
+                <p>扫一扫下载游戏</p>
+            </div>
+            <h3 class="sider-tit2">近期热点</h3>
+            <div class="hot-banner box">
+                <div class="ad">
+                   <div class="box-imgs">
+                       <ul class="imgs">
+                           <li><img src="images/582d26c696dee46fcf5b99c7Ai24igwx.jpg" alt=""/></li>
+                           <li><img src="images/57ea5a36143cfa5a9bb4e461Q1cIaEEU.jpg" alt=""/></li>
+                           <li><img src="images/57ea5662143cfa570fa5e793Y3KMiC0r.jpg" alt=""/></li>
+                           <li><img src="images/585a535096dee43007211167QczshRgO.jpg" alt=""/></li>
+                           <li><img src="images/5853c57096dee42dca6adce4KyEDzGND.jpg" alt=""/></li>
+                           <li><img src="images/582057ea0699e27f36c959b5ipNboYU2.png" alt=""/></li>
+                       </ul>
+                   </div>
+                    <ol>
+                        <!--<li class="current"></li>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                        <!--<li></li>-->
+                    </ol>
+                </div>
+            </div>
+            <h3 class="sider-tit3">热门攻略</h3>
+            <div class="gonglue-box">
+                <ul>
+                    <li><a href="#"><b></b>【御魂】 提高式神生存能力:防御和生命御魂探讨</a></li>
+                    <li><a href="#"><b></b>【御魂】 提高式神生存能力:防御和生命御魂探讨</a></li>
+                    <li><a href="#"><b></b>【御魂】 提高式神生存能力:防御和生命御魂探讨</a></li>
+                    <li><a href="#"><b></b>【御魂】 提高式神生存能力:防御和生命御魂探讨</a></li>
+                </ul>
+            </div>
+            <h3 class="sider-tit4">精选同人</h3>
+            <div class="hot-banner box">
+                <div class="ad">
+                    <div class="box-imgs">
+                        <ul class="imgs">
+                            <li><img src="images/c67ac3e8-95bb-4b5e-b778-9bba1dc025ec.jpg" alt=""/></li>
+                            <li><img src="images/580847f8-e3fc-41ce-97b0-e0129aaad4cd.jpg" alt=""/></li>
+                            <li><img src="images/b6eb90e4-41d8-4412-b204-70aedff24219.jpg" alt=""/></li>
+                            <li><img src="images/94a5371a-cbea-42b4-8bfa-5c7420bdd1cf.jpg" alt=""/></li>
+                        </ul>
+                    </div>
+                    <ol>
+                    </ol>
+                </div>
+            </div>
+            <h3 class="sider-tit5">官方媒体</h3>
+            <div class="media-box">
+                <ul class="media-tit">
+                    <li class="weixin-tit cur">关注微信</li>
+                    <li class="weibo-tit">关注微博</li>
+                </ul>
+                <ul class="media-wrap">
+                    <li class="cur">
+                        <img src="images/weixin-code_d99aea4.jpg" alt=""/>
+                        <p>扫一扫关注微信</p>
+                    </li>
+                    <li>
+                        <img src="images/weibo-code_2cdebbf.png" alt=""/>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--版权信息-->
+<div class="footer">
+    <div class="w">
+        <div class="footer-center">
+            <a href="" class="wangyi"></a>
+            <a href="" class="games"></a>
+            <span>
+                <span>公司简介</span> -
+                <span>客户服务</span> -
+                <span>相关法律</span> -
+                <span>网易游戏</span> -
+                <span>联系我们</span> -
+                <span>商务合作</span> -
+                <span>加入我们</span>
+                <br>
+                <span>网易公司版权所有 ?1997-2016 &nbsp;&nbsp;&nbsp;&nbsp; 粤网文[2014]0636-236号  </span>
+            </span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

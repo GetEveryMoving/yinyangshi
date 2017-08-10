@@ -1,0 +1,1374 @@
+*{
+    padding:0;
+    margin:0;
+}
+/*头部*/
+.topBar{
+    height: 55px;
+    background: #fbfbfb;
+}
+.topBar h1{
+    text-indent: -2000px;
+    background:url("../images/topBarimg.png") no-repeat;
+    height: 48px;
+    float: left;
+}
+.topBar h1 a{
+    width: 132px;
+    height: 48px;
+    display: block;
+}
+.topBar .topBar-right li{
+    float: left;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+.topBar .topBar-right li a{
+    display: block;
+
+}
+.topBar .topBar-right li.topBar-li1{
+    width: 72px;
+}
+.topBar .topBar-right li.topBar-li2{
+    width: 72px;
+}
+.topBar .topBar-right li.topBar-li3{
+    width: 123px;
+
+}
+.topBar .topBar-right li.topBar-li3 a{
+    padding-right: 10px;
+    color: #bc2e2e;
+    position: relative;
+}
+.topBar .topBar-right li a:hover{
+    color: #bc2e2e!important;
+    border-bottom: 3px solid #bc2e2e;
+    background: #F3F3F3;
+}
+.topBar .topBar-right li i{
+    width: 7px;
+    height: 12px;
+    position: absolute;
+    right: 8px;
+}
+
+/*大图的部分*/
+.main{
+    height: 585px;
+    width: 1400px;
+    margin-top: 2px;
+    background:url("../images/datu.JPG") no-repeat center top;
+    position: relative;
+}
+.main .main-top ul{
+    float: right;
+    padding-top: 35px;
+    z-index: 10;
+}
+.main .main-top ul li{
+    float: left;
+    width: 118px;
+    height: 65px;
+    padding-right: 10px;
+}
+.main .main-top ul li a{
+    font-size: 16px;
+    font-family: 'Microsoft Yahei';
+    display: block;
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 65px;
+    z-index: 90;
+    /*padding-top: 35px;*/
+    cursor: pointer;
+}
+.main .main-top ul li .link{
+    background: url("../images/jinglingtu.png")  no-repeat -1381px -70px;
+    width: 15px;
+    height: 26px;
+    display: block;
+    float: right;
+}
+
+/*标题定位效果*/
+.main .main-top1-fixed {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 1350px;
+    background: rgba(255,255,255,.9);
+    z-index: 99;
+    display: none;
+}
+.top1-left{
+    float: left;
+    padding-left: 15px;
+    padding-top: 13px;
+}
+.top1-left .top1-p{
+    float: left;
+    width: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    color: #000;
+    margin-top: 3px;
+    margin-right: 10px;
+    font-family: 'Microsoft Yahei';
+}
+.top1-left img{
+    float: left;
+    width: 74px;
+    height: 74px;
+    margin-right: 15px;
+}
+.top1-left .top1-title{
+    float: left;
+    height: 72px;
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+}
+.top1-title .logo{
+    float: left;
+    width: 73px;
+    height: 73px;
+    margin-right: 14px;
+    background: url("../images/jinglingtu.png") no-repeat -1200px -1107px;
+}
+.top1-left .top1-title .game-name{
+    float: left;
+    padding-top: 2px;
+}
+.top1-title .game-name h3{
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 10px;
+    font-family: 'Microsoft Yahei';
+}
+.top1-title .game-name p{
+    color: #333;
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: 'Microsoft Yahei';
+
+}
+.main .main-top1-fixed ul{
+    float: right;
+    padding-top: 35px;
+}
+.main .main-top1-fixed ul li{
+    float: left;
+    width: 118px;
+    height: 65px;
+    padding-right: 10px;
+}
+.main .main-top1-fixed ul li a{
+    font-size: 16px;
+    font-family: 'Microsoft Yahei';
+    display: block;
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 65px;
+}
+.main .main-top1-fixed ul li .link{
+    background: url("../images/jinglingtu.png")  no-repeat -1381px -70px;
+    width: 15px;
+    height: 26px;
+    display: block;
+    float: right;
+}
+
+
+.main .main-left-img1{
+    position: relative;
+    display: block;
+    background: url("../images/main-leftimg2.PNG") no-repeat;
+    width: 70px;
+    height: 200px;
+    left: -53px;
+    top: 38px;
+    opacity: 0;
+}
+.main .main-left-img2{
+    position: relative;
+    display: block;
+    left: 169px;
+    top: -300px;
+    width: 171px;
+    height: 450px;
+    opacity: 0;
+    background: url("../images/main-leftimg1.PNG") no-repeat;
+}
+
+/*两个大人物的特效*/
+.shenle{
+    position: absolute;
+    width: 556px;
+    height: 781px;
+    background: url("../images/shenle.png") 0 0 no-repeat;
+    left: 50%;
+    margin-left: -344px;
+    top: 200px;
+    opacity: 0;
+}
+.qingming{
+    opacity: 0;
+    position: absolute;
+    width: 815px;
+    height: 800px;
+    background: url("../images/qingming.png") 0 0 no-repeat;
+    left: 50%;
+    margin-left: -250px;
+    top: 130px;
+}
+.main .xiaotuzi{
+    display: block;
+    width: 150px;
+    height: 175px;
+    position: absolute;
+    bottom: 0px;
+    left: 125px;
+}
+
+.main-bottom{
+    position: absolute;
+    width: 390px;
+    height: 123px;
+    top: 462px;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -148px;
+    z-index: 9;
+}
+.main-bottom .main-bottom-b1{
+    width: 100%;
+    height: 100%;
+    background: #fccc00;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 0 7px 4px #feeb00 inset;
+}
+.main-bottom .main-bottom-b1 a{
+    display: block;
+    width: 22px;
+    height: 22px;
+    marign-left:10px;
+    position: absolute;
+    left: 10px;
+    top:10px;
+    background: url("../images/jinglingtu.png") -1371px -246px;
+}
+.main-bottom .main-bottom-b1 .main-bottom-zi{
+    position: absolute;
+    width: 43px;
+    height: 100px;
+    left: 40px;
+    top: 10px;
+    background: url("../images/jinglingtu.png") -1200px -363px;
+}
+.main-bottom .main-bottom-b1 .main-erwei{
+    float: left;
+    width: 91px;
+    height: 91px;
+    margin-left: 95px;
+    margin-top: 10px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+.main-bottom-b1 .main-erwei .main-erweiing{
+    width: 91px;
+    height: 91px;
+    display: block;
+}
+.main-bottom-b1 .main-erwei {
+    float:right;
+    position: relative;
+}
+.main-bottom-b1 .main-erwei i{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+.main-bottom-b1 .main-button{
+    /*position: relative;*/
+    height: 106px;
+    width: 171px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.main-bottom-b1 .main-button .main-button-r1:hover{
+    opacity: 0.8;
+}
+.main-bottom-b1 .main-button .main-button-r2:hover{
+    opacity: 0.8;
+}
+.main-bottom-b1 .main-button .main-button-r1 {
+    display: block;
+    width: 169px;
+    height: 51px;
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*float: right;*/
+    background: url("../images/jinglingtu.png") -798px -1267px;
+}
+.main-bottom-b1 .main-button .main-button-r2 {
+    display: block;
+    width: 169px;
+    height: 51px;
+    margin-top: 5px;
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*float: right;*/
+    background: url("../images/jinglingtu.png") -626px -1267px;
+}
+.main-right-img{
+    z-index: 10;
+    position: absolute;
+    width: 457px;
+    height: 1181px;
+    background: url("../images/right.png")  no-repeat;
+    left: 50%;
+    margin-left: 242px;
+    top: 419px;
+}
+.main-right-img .arrow{
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 20;
+    top: 140px;
+    left: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fee300;
+}
+.main-right-img .main-right-title{
+    background: url("../images/jinglingtu.png") no-repeat -627px -371px;
+    position: absolute;
+    width: 321px;
+    height: 168px;
+    top: -15px;
+    left: 25px;
+    z-index: 2;
+}
+.main-right-img .main-right-link{
+    width: 346px;
+    padding-top: 150px;
+    position: relative;
+}
+.main-right-img .main-right-link a{
+    display: block;
+    cursor: pointer;
+}
+.main-right-img .main-right-link .icon1{
+    background: url("../images/jinglingtu.png") no-repeat 0px -1007px;
+    display: block;
+    width: 298px;
+    height: 100px;
+    margin-top: -10px;
+    margin-left: 28px;
+    /*position: absolute;*/
+}
+.main-right-img .main-right-link .icon1 span{
+    margin: 58px 0 0 25px;
+    color: #000;
+    display: block;
+    cursor: pointer;
+}
+.main-right-img .main-right-link .icon2{
+    float: right;
+    margin-right: 28px;
+    display: block;
+    width: 319px;
+    height: 123px;
+    margin-top: -10px;
+    background: url("../images/jinglingtu.png") no-repeat -954px 0px;
+}
+.main-right-img .main-right-link .icon3{
+    width: 325px;
+    height: 100px;
+    float: left;
+    margin-left: 28px;
+    margin-top: -8px;
+    background: url("../images/jinglingtu.png") no-repeat -728px -899px;
+}
+.main-right-img .main-right-link .icon4{
+    width: 314px;
+    height: 116px;
+    float: left;
+    margin-top: -13px;
+    background: url("../images/jinglingtu.png") no-repeat -954px -481px;
+}
+.main-right-img .main-right-link .icon5{
+    width: 315px;
+    height: 108px;
+    float: left;
+    margin-left: 28px;
+    margin-top: -10px;
+    background: url("../images/jinglingtu.png") no-repeat -954px -706px;
+}
+.main-right-img .main-right-link .icon6{
+    width: 312px;
+    height: 108px;
+    margin-right: 28px;
+    float: right;
+    margin-top: -12px;
+    background: url("../images/jinglingtu.png" ) no-repeat 0px -899px;
+}
+.main-right-img .main-right-link .icon7{
+    width: 330px;
+    height: 135px;
+    float: left;
+    margin-left: 28px;
+    margin-top: -13px;
+    background: url("../images/jinglingtu.png") no-repeat -557px -746px;
+}
+.main-right-img .main-right-link .icon8{
+    width: 93px;
+    height: 120px;
+    float: left;
+    margin-left: 28px;
+    margin-top: -15px;
+    background: url("../images/jinglingtu.png") no-repeat -1140px -123px ;
+}
+.main-right-img .main-right-link .icon9{
+    margin-left: 7px;
+    width: 93px;
+    height: 120px;
+    float: left;
+    margin-top: -15px;
+    background: url("../images/jinglingtu.png") no-repeat -954px -243px;
+}
+.main-right-img .main-right-link .icon10{
+    margin-left: 7px;
+    width: 93px;
+    height: 120px;
+    float: left;
+    margin-top: -15px;
+    background: url("../images/jinglingtu.png") no-repeat -1047px -243px;
+}
+/*新闻公告*/
+.news{
+    height: 459px;
+    background: #fff;
+    position: relative;
+}
+/*第一个轮播图*/
+.news .news-imgs{
+    float: left;
+    width: 360px;
+    height: 270px;
+    margin-top: 34px;
+    /*background: red;*/
+}
+#box {
+    width: 360px;
+    height: 270px;
+}
+#box .ad {
+    width: 270px;
+    position: relative;
+}
+.ad .box-imgs  {
+    width: 360px;
+    height: 270px;
+    overflow: hidden;
+}
+#box .ad ul {
+    width: 3000px;
+    height: 270px;
+    position: relative;
+}
+.ad ul li {
+    width: 360px;
+    height: 270px;
+    /*min-height: 270px;*/
+    overflow: hidden;
+    float: left;
+}
+.hot-banner li img {
+    width: 360px;
+}
+.ad ol {
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -15px;
+}
+.ad ol li {
+    width: 8px;
+    height: 8px;
+    border: 4px solid #fba9ca;
+    border-radius: 100%;
+    margin: 0 3px;
+    float: left;
+    vertical-align: top;
+    cursor: pointer;
+}
+.ad ol li.current {
+    background-color: #fba9ca;
+}
+
+.news .new-news{
+    float: left;
+    margin-left: 5px;
+    width: 500px;
+    height: 270px;
+    margin-top: 34px;
+    /*background: yellow;*/
+}
+/*新闻部分的第一个ul*/
+.news .new-news .new-ul1 li{
+    float: left;
+    width: 75px;
+    margin-left: 14px;
+}
+.new-news .new-ul1{
+    height: 45px;
+    border-bottom: 3px solid #000;
+}
+.news .new-news li a.newimg1{
+    display: block;
+    width: 44px;
+    height: 31px;
+    float: left;
+    background: url("../images/jinglingtu.png") no-repeat -1319px -576px;
+}
+/*有点击时会有伪标签的效果*/
+/*.news .new-news li a.newimg1:hover{*/
+   /**/
+/*}*/
+.news .new-news li span.links{
+    display: block;
+    width: 13px;
+    height: 22px;
+    float: right;
+    margin-top: 10px;
+    background: url("../images/jinglingtu.png") no-repeat -1357px -247px;
+}
+.news .new-news li a.newimg2{
+    display: block;
+    width: 44px;
+    height: 31px;
+    float: left;
+    background: url("../images/jinglingtu.png") no-repeat -1358px -480px;
+}
+.news .new-news li a.newimg3{
+    display: block;
+    width: 44px;
+    height: 31px;
+    float: left;
+    background: url("../images/jinglingtu.png") no-repeat -1355px -545px;
+}
+.news .new-news li a.newimg4{
+    display: block;
+    width: 44px;
+    height: 31px;
+    float: left;
+    background: url("../images/jinglingtu.png") no-repeat -1274px -576px;
+}
+.news .new-news li a.newimg5{
+    display: block;
+    width: 44px;
+    height: 31px;
+    float: left;
+    background: url("../images/jinglingtu.png") no-repeat -1344px -513px;
+}
+/*新闻部分的第二个ul*/
+.new-news .new-ul2{
+    border-top: 2px solid #000;
+    margin-top: 3px;
+}
+.new-news .new-ul2 li span{
+    float: right;
+    font-size: 12px;
+    color: #BCCDDC;
+}
+.new-news .new-ul2 li {
+    font-size: 14px;
+    height: 34px;
+    line-height: 35px;
+    padding-left: 10px;
+    border-bottom:1px dashed #000;
+}
+.new-news .new-ul2 li.new-ul2-li1{
+    margin-top: 12px;
+
+}
+.new-news .new-ul2 li a{
+    font-family: 'Microsoft Yahei';
+}
+/*平安之旅*/
+.news .safe{
+    position: absolute;
+    width: 587px;
+    height: 90px;
+    bottom: 0;
+}
+.news .safe a.safe-right1{
+    display: block;
+    width: 70px;
+    height: 33px;
+    background: url("../images/jinglingtu.png") no-repeat -1273px -446px;
+}
+.news .safe a.safe-right2{
+    display: block;
+    width: 63px;
+    height: 33px;
+    background: url("../images/jinglingtu.png") no-repeat -1274px -411px;
+}
+.news .safe .safe-left{
+    width: 130px;
+    height: 69px;
+    float: left;
+    margin-left: 100px;
+    background: url("../images/jinglingtu.png") no-repeat -1273px 0;
+}
+.new-dian{
+    width: 64px;
+    height: 100px;
+    float: left;
+    margin-left: 0;
+    margin-top: -15px;
+    background: url("../images/newdian.png") no-repeat;
+}
+.safe-center{
+    float: left;
+    padding-top: 25px;
+    padding-left: 10px;
+    width: 85px;
+    width: 85px;
+    height: 70px;
+
+}
+.safe-center:hover{
+    width: 98px;
+    height: 90px;
+    margin-top: -10px;
+    background: url("../images/jinglingtu.png") no-repeat -1141px -899px;
+}
+.safe-right{
+    width: 98px;
+    height: 90px;
+    float: left;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+.safe-right:hover{
+    width: 98px;
+    height: 90px;
+    margin-top: -10px;
+    background: url("../images/jinglingtu.png") no-repeat -1141px -899px;
+}
+/*式神*/
+.shishen{
+    width: 100%;
+    height: 418px;
+    background: url("../images/huliimg.jpg")  -140px  no-repeat;
+}
+.shishen .shishen-right{
+    height: 342px;
+}
+.shen{
+    margin-left: 100px;
+}
+.shen .shen-top{
+    width: 800px;
+    height: 50px;
+    margin-bottom: 33px;
+    border-bottom: 1px dotted #333;
+}
+.shen .shen-top .shen-top-tabs{
+    float: left;
+    padding-top: 14px;
+    margin-left: 10px;
+}
+.shen .shen-top .shen-top-tabs a{
+    float: left;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Microsoft JhengHei",'Microsoft Yahei';
+    margin-right: 32px;
+}
+.shen .shen-top .shen-top-tabs a:hover{
+    color:#cea441;
+}
+.shen .shen-bottom{
+    /*width: 5382px;*/
+    left: 0px;
+    position: relative;
+    /*overflow: hidden;*/
+    padding: 0px;
+    margin: 0px;
+}
+.shen .shen-bottom ul{
+    padding: 5px 30px 0 0;
+    height: 202px;
+    border-right: 1px solid #95a7a4;
+    /*margin-right: 24px;*/
+}
+
+/*搜索框*/
+.search{
+    height: 67px;
+    margin-bottom: 12px;
+}
+.search .text{
+    width: 317px;
+    height: 40px;
+    border: 2px solid #000;
+    border-right: none;
+    margin-left: 100px;
+    margin-top: 23px;
+    padding-left: 17px;
+    float: left;
+    font-size: 18px;
+    font-family: 'Microsoft Yahei';
+}
+.search .btn{
+    background: url("../images/jinglingtu.png") no-repeat -1331px -271px;
+    width: 58px;
+    height: 58px;
+    vertical-align: middle;
+    float: left;
+    margin-top:9px;
+    cursor: pointer;
+}
+/*问题和攻略的这一块*/
+.question{
+    height: 434px;
+}
+/*左边的需要轮播图*/
+/*上面是是轮播图*/
+.question-left{
+    float: left;
+    width: 368px;
+    height: 430px;
+    border: 2px solid #000;
+    /*margin-right: 35px;*/
+    position: relative;
+    margin-left: 25px;
+    /*overflow: hidden;*/
+}
+#box1 {
+    width: 368px;
+    min-height: 228px;
+}
+#box1 .ad1 {
+    width: 368px;
+    position: relative;
+}
+.ad1 .box-imgs1  {
+    width: 368px;
+    overflow: hidden;
+}
+#box1 .ad1 ul {
+    width: 1200px;
+    height: 228px;
+    position: relative;
+}
+.ad1 ul li {
+    width: 368px;
+    height: 228px;
+    overflow: hidden;
+    float: left;
+}
+.hot-banner1 li img {
+    width: 368px;
+}
+.ad1 ol {
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+}
+.ad1 ol li {
+    width: 8px;
+    height: 8px;
+    border: 4px solid #000;
+    border-radius: 100%;
+    margin: 0 3px;
+    float: left;
+    vertical-align: top;
+    cursor: pointer;
+}
+.ad1 ol li.current {
+    background-color: #000;
+}
+/*下面是标签的大按钮*/
+.question-nav{
+    width: 100%;
+}
+.question-nav a{
+    float: left;
+    padding-left: 32px;
+    height: 150px;
+    width: 60px;
+    margin-top: 50px;
+}
+.question-nav a span{
+    transition: all .3s;
+    float: left;
+    display: block;
+    width: 24px;
+    height: 134px;
+    margin-right: 25px;
+}
+.question-nav a .line{
+    float: right;
+    display: block;
+    width: 11px;
+    height: 150px;
+    background: url("../images/jinglingtu.png") no-repeat -933px -189px;
+}
+.question-nav a span.str1{
+    background: url("../images/jinglingtu.png") no-repeat -213px -208px;
+}
+.question-nav a span.str2{
+    background: url("../images/jinglingtu.png") no-repeat -141px -208px;
+}
+.question-nav a span.str3{
+    background: url("../images/jinglingtu.png") no-repeat -165px -208px;
+}
+.question-nav a span.str4{
+    background: url("../images/jinglingtu.png") no-repeat -189px -208px;
+}
+.question-left ul{
+    width: 740px;
+}
+.question-left li{
+    float: left;
+}
+/*右边的*/
+.question-right{
+    float: right;
+    width: 790px;
+}
+.new-dians{
+    width: 64px;
+    height: 110px;
+    float: left;
+    padding-right: 10px;
+    background: url("../images/newdian.png") no-repeat;
+}
+.question-right .que-right-top{
+    width: 774px;
+    height: 109px;
+    border-bottom: 1px solid #cbcdcc;
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+}
+.question-right .que-right-top .que1{
+    width: 134px;
+    height: 85px;
+    float: left;
+    background: url("../images/jinglingtu.png") no-repeat -954px -814px;
+}
+.question-right .que-right-top .que2{
+    width: 66px;
+    height: 37px;
+    float: left;
+}
+.que-right-top .que2 .que2-img{
+    width: 66px;
+    height: 37px;
+    float: left;
+    margin-top: 25px;
+    background: url("../images/jinglingtu.png") no-repeat -1329px -330px;
+}
+.question-right .que-right-top .que3{
+    width: 70px;
+    height: 30px;
+    float: left;
+}
+.que-right-top .que3 .que3-img{
+    width: 70px;
+    height: 30px;
+    float: left;
+    margin-top: 35px;
+    background: url("../images/jinglingtu.png") no-repeat -1273px -514px;
+}
+.question-right .que-right-top .que4{
+    width: 74px;
+    height: 35px;
+    float: left;
+}
+.que-right-top .que4 .que4-img{
+    width: 74px;
+    height: 35px;
+    float: left;
+    margin-top: 30px;
+    background: url("../images/jinglingtu.png") no-repeat -1273px -373px;
+}
+.question-right .que-right-top .que5{
+    width: 80px;
+    height: 30px;
+    float: left;
+}
+.que-right-top .que5 .que5-img{
+    width: 80px;
+    height: 30px;
+    float: left;
+    margin-top: 30px;
+    background: url("../images/jinglingtu.png") no-repeat -1273px -546px;
+}
+
+.que-right-bottom{
+    width: 830px;
+    /*background: red;*/
+    height: 285px;
+}
+.que-right-bottom li{
+    float: left;
+    margin-right: 56px;
+    width: 342px;
+    height: 48px;
+    padding-top: 8px;
+    padding-left: 15px;
+    border-bottom: 1px dotted #333;
+}
+.que-right-bottom li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.que-right-bottom li a  p{
+    display: block;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+}
+.que-right-bottom  p i{
+    position: absolute;
+    top: 5px;
+    left: -18px;
+    width: 10px;
+    height: 10px;
+    /*background:url("../images/xiaosanjiao.png");*/
+    /*border-left: 7px solid #333;*/
+    /*border-top: 4px solid transparent;*/
+    /*border-bottom: 4px solid transparent;*/
+}
+.que-right-bottom li a em{
+    font-size: 14px;
+    color: #b2afaf;
+    font-weight: 400;
+    font-style: normal;
+}
+/*同人专区*/
+.tongren{
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+    /*background: red;*/
+}
+.tongren .tongren-top{
+    width: 1200px;
+    height: 77px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    /*position: relative;*/
+}
+.tongren .tongren-top .tongren-title{
+    float: left;
+    width: 112px;
+    height: 106px;
+    margin-left: 15px;
+    margin-right: 10px;
+    background: url("../images/jinglingtu.png") no-repeat -1065px -597px;
+}
+.tongren .tongren-top .tongren-tabs{
+    position: relative;
+    width: 1062px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    float: right;
+    margin-top: 21px;
+}
+.tongren-top .tongren-tabs li{
+    float: left;
+    width: 155px;
+    height: 75px;
+    border-bottom: 2px solid #000;
+}
+.tongren-top .tongren-tabs li.lastone{
+    float: left;
+    width: 110px;
+    height: 24px;
+    border-bottom:none;
+    cursor: pointer;
+    margin-top: 30px;
+    background: url("../images/jinglingtu.png") no-repeat -1273px -606px;
+}
+.tongren-tabs li a.a1{
+    border-right:none;
+}
+.tongren-tabs li a{
+    position: absolute;
+    display: block;
+    width: 155px;
+    height: 58px;
+    font-size: 16px;
+    font-family: 'Microsoft Yahei';
+    border-right: 1px dotted #000;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    line-height: 58px;
+}
+.tongren-tabs li a span{
+    height: 18px;
+}
+.tongren-tabs li a i{
+    height: 54px;
+    /*background: url("../images/jinglingtu.png") no-repeat ;*/
+}
+/*同人专区的图片部分*/
+.tongimg li{
+    float: left;
+    width: 285px;
+    height: 200px;
+    margin: 0 10px 10px;
+}
+.tongimg li a{
+    display: block;
+    width: 100%;
+    height: 163px;
+    overflow: hidden;
+    position: relative;
+}
+.tongimg li a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: url("../images/ceng.png") repeat;
+}
+.tongimg li a span em{
+    position: absolute;
+    width: 79px;
+    height: 93px;
+    left: 50%;
+    margin-left: -40px;
+    top: 50%;
+    margin-top: -46px;
+    /*display: none;*/
+    background: url("../images/jinglingtu.png") no-repeat -1177px -597px;
+}
+.tongimg li p{
+    line-height: 42px;
+    color: #666;
+    height: 42px;
+    font-size: 14px;
+    overflow: hidden;
+}
+/*活动专区*/
+.act{
+    width: 1270px;
+    height: 434px;
+    margin: 0 auto;
+    margin-top: 65px;
+}
+.act .act-title{
+    width: 257px;
+    height: 370px;
+    margin-right: 37px;
+    background: url("../images/huli.png") 0 0 no-repeat;
+    float: left;
+}
+.act .act-ul{
+    width: 965px;
+    float: left;
+}
+.act .act-ul li{
+    margin: 0 25px 37px;
+    float: left;
+    position: relative;
+}
+.act .act-ul li a{
+    display: block;
+    width: 270px;
+    height: 153px;
+    overflow: hidden;
+}
+.act .act-ul li a span{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 6px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+}
+/*二维码部分*/
+.code{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 265px;
+}
+.code .logo{
+    display: block;
+    float: left;
+    width: 70px;
+    height: 199px;
+    margin-right: 105px;
+    background: url("../images/logo.png") 0 0 no-repeat;
+}
+.code .wrap{
+    float: left;
+    width: 270px;
+    padding-top: 20px;
+    height: 180px;
+    position: relative;
+    background: #f6f6f6;
+    margin-right: 117px;
+}
+.code .wrap .erwei{
+    position: absolute;
+    background: #fff;
+    right: -32px;
+    top: -32px;
+    width: 132px;
+    height: 132px;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+.wrap .txt .txtimg{
+    display: block;
+    float: left;
+    width: 24px;
+    height: 96px;
+    margin-top: 2px;
+   background: url("../images/jinglingtu.png") no-repeat -1245px -364px;
+}
+.wrap .txt p{
+    width: 27px;
+    float: left;
+    line-height: 17px;
+    font-family: 'Microsoft Yahei';
+    font-size: 16px;
+    margin-left: 25px;
+}
+.wrap p.txt-p{
+    margin-left: 0;
+}
+.wrap .line{
+    width: 52px;
+    height: 2px;
+    background: #d1d1d1;
+    position: absolute;
+    bottom: 40px;
+    left: 33px;
+}
+.wrap .name{
+    position: absolute;
+    bottom: 15px;
+    left: 33px;
+    color: #000;
+    font-size: 14px;
+}
+.wrap .name span{
+    color: #d2c199;
+}
+.code .sec{
+    position: relative;
+    width: 225px;
+    height: 90px;
+    float: left;
+    padding-top: 95px;
+}
+.code .sec .sec-icon{
+    position: absolute;
+    width: 111px;
+    height: 109px;
+    top: -32px;
+    left: 0;
+    background: url("../images/jinglingtu.png") no-repeat -954px -597px;
+}
+.code .sec p{
+    color: black;
+    font-size: 14px;
+    line-height: 22px;
+}
+.code .sec p.tel{
+    font-family: Georgia,"Microsoft Yahei";
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+.code .sec .line{
+    width: 52px;
+    height: 2px;
+    background: #d1d1d1;
+    display: block;
+    margin-bottom: 4px;
+}
+.code .sec a{
+    display: block;
+    color: #c9b27c;
+    font-size: 12px;
+}
+/*尾部*/
+.footer{
+    height: 573px;
+    padding-top: 120px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #fff url("../images/footerimg.jpg") top center no-repeat;
+    position: relative;
+}
+.footer .txt1{
+    /*opacity: 0;*/
+    width: 626px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+    background: url("../images/jinglingtu.png") no-repeat 0px -1267px;
+    /*background: red;*/
+}
+.footer .footer-btn{
+    display: block;
+    width: 330px;
+    height: 332px;
+    margin: 0 auto;
+}
+.footer-btn .txt2{
+    transition: all .5s linear;
+    display: block;
+    width: 166px;
+    height: 73px;
+    position: absolute;
+    left: 50%;
+    margin-left: -83px;
+    top: 195px;
+}
+.footer-btn .txt2 em{
+    transition: all .5s linear;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/jinglingtu.png") no-repeat -831px -1187px;
+}
+.footer-btn .bar{
+    transition: all .5s ease;
+    display: block;
+    width: 74px;
+    height: 118px;
+    position: absolute;
+    margin-left: -40px;
+    left: 50%;
+    top: 250px;
+    background: url("../images/jinglingtu.png") no-repeat -954px -363px;
+}
+.footer-btn .bottom-code{
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    left: 50%;
+    top: 260px;
+    margin-left: -76px;
+}
+.bottom-code p{
+    display: none;
+    position: absolute;
+    top: -10px;
+    right: -45px;
+    width: 50px;
+    height: 182px;
+    background-repeat: no-repeat;
+    background: url("../images/jinglingtu.png") -627px -189px;
+}
+.footer-btn .door{
+    display: block;
+    width: 188px;
+    height: 208px;
+    position: absolute;
+    margin-left: -94px;
+    left: 50%;
+    top: 344px;
+    background: url("../images/jinglingtu.png") no-repeat -127px 0px;
+}
+.footer .share{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    z-index: 20;
+    text-align: center;
+    background: #c3d8e2;
+}
+.share .share-top{
+    display: block;
+    width: 460px;
+    margin: 0 auto;
+}
+.share .share-top{
+    display: inline-block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.share .share-top em{
+    display: inline-block;
+    font-style: normal;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.share .share-top .share-top-title{
+    display: inline-block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.ft{
+    width: 100%;
+    height: 125px;
+    background: #c3d8e2;
+    position: absolute;
+    padding-bottom: 15px;
+    bottom: 0;
+}
+.ft p{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+    font-size: 12px;
+    font-family: '宋体';
+    line-height: 20px;
+    display: block;
+    position: relative;
+}
+.ft p a{
+    color: #000;
+}

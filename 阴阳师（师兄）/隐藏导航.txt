@@ -1,0 +1,161 @@
+ <!--标题定位的效果-->
+        <div class="main-top1-fixed">
+            <div class="top1-left">
+                <p class="top1-p">扫码下载</p>
+                <img src="../images/qr" alt="" />
+                <a href="#" class="top1-title">
+                    <span class="logo"></span>
+                    <div class="game-name">
+                        <h3>阴阳师</h3>
+                        <p>网易和风匠心巨制</p>
+                    </div>
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        官网首页
+                    </a>
+                    <span class="link"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        新闻资讯
+                    </a>
+                    <span class="link"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        游戏策略
+                    </a>
+                    <span class="link"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        游戏特色
+                    </a>
+                    <span class="link"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        同人专区
+                    </a>
+                    <span class="link"></span>
+                </li>
+                <li>
+                    <a href="#">
+                        官网渠道
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+                    样式
+
+
+.main .main-top1-fixed {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 1350px;
+    background: rgba(255,255,255,.9);
+    z-index: 99;
+    display: none;
+}
+.top1-left{
+    float: left;
+    padding-left: 15px;
+    padding-top: 13px;
+}
+.top1-left .top1-p{
+    float: left;
+    width: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    color: #000;
+    margin-top: 3px;
+    margin-right: 10px;
+    font-family: 'Microsoft Yahei';
+}
+.top1-left img{
+    float: left;
+    width: 74px;
+    height: 74px;
+    margin-right: 15px;
+}
+.top1-left .top1-title{
+    float: left;
+    height: 72px;
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+}
+.top1-title .logo{
+    float: left;
+    width: 73px;
+    height: 73px;
+    margin-right: 14px;
+    background: url("../images/jinglingtu.png") no-repeat -1200px -1107px;
+}
+.top1-left .top1-title .game-name{
+    float: left;
+    padding-top: 2px;
+}
+.top1-title .game-name h3{
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 10px;
+    font-family: 'Microsoft Yahei';
+}
+.top1-title .game-name p{
+    color: #333;
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: 'Microsoft Yahei';
+
+}
+.main .main-top1-fixed ul{
+    float: right;
+    padding-top: 35px;
+}
+.main .main-top1-fixed ul li{
+    float: left;
+    width: 118px;
+    height: 65px;
+    padding-right: 10px;
+}
+.main .main-top1-fixed ul li a{
+    font-size: 16px;
+    font-family: 'Microsoft Yahei';
+    display: block;
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 65px;
+}
+.main .main-top1-fixed ul li .link{
+    background: url("../images/jinglingtu.png")  no-repeat -1381px -70px;
+    width: 15px;
+    height: 26px;
+    display: block;
+    float: right;
+}
+
+
+
+     js
+
+
+//固定的标题效果
+$(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop()  >= 20){
+            $(".main-top1-fixed").fadeIn(100);
+        }else{
+            $(".main-top1-fixed").fadeOut(100);
+        }
+    })
+})
+
+

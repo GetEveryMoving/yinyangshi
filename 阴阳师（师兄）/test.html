@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box_max {
+			width: 360px;
+			height: 270px;
+			border: 1px solid red;
+			margin: 100px auto;
+            padding: 5px;
+		}
+		.wrap {
+            width: 360px;
+            height: 270px;
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden;
+		}
+		.banner-box {
+            width: 700%;
+            position: absolute;
+		}
+		.banner-box a {
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="box_max" class="hot-banner">
+                <div class="wrap">
+                    <div class="banner-box">
+                        <a href="#"><img src="images/57ea5a36143cfa5a9bb4e461Q1cIaEEU.jpg" alt=""/></a>
+                        <a href="#"><img src="images/57ea5662143cfa570fa5e793Y3KMiC0r.jpg" alt=""/></a>
+                        <a href="#"><img src="images/582d26c696dee46fcf5b99c7Ai24igwx.jpg" alt=""/></a>
+                        <a href="#"><img src="images/585a535096dee43007211167QczshRgO.jpg" alt=""/></a>
+                        <a href="#"><img src="images/5853c57096dee42dca6adce4KyEDzGND.jpg" alt=""/></a>
+                        <a href="#"><img src="images/582057ea0699e27f36c959b5ipNboYU2.png" alt=""/></a>
+                        <a href="#"><img src="images/57ea5a36143cfa5a9bb4e461Q1cIaEEU.jpg" alt=""/></a>
+                    </div>
+                </div>
+                <div class="hd">
+                    <i class="on"></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+</body>
+<script src="js/jquery-1.12.2.js"></script>
+<script>
+    var pic = 0;
+    var timerId = null;
+    var wrapWidht = $(".wrap").width();
+    var bannerBox = $(".banner-box");
+    var as = bannerBox.children();
+    timerId = setInterval(function () {
+        if(pic>=as.length-1){
+            pic = 0;
+            bannerBox.css({
+                left: -wrapWidht*pic+"px"
+            })
+        }
+        pic++;
+        bannerBox.animate({
+            left: -wrapWidht*pic+"px"
+        });
+    },1000)
+</script>
+</html>
